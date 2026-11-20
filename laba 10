@@ -1,0 +1,5 @@
+def transponse_ragged(matrix, fill=none):
+  if not matrix:
+    return []
+  n=max(map(len, matrix))
+  return [[row[i] if i < len(row) else fill for row in matrix] for i in range (n)]
