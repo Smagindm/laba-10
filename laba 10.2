@@ -1,0 +1,6 @@
+def word_frequency_sorted(text):
+  words = text.lower().split()
+  counts={}
+  for word in words:
+    counts[word] = counts.get (word, 0) + 1
+  return sorted(counts.items(), kew = lanbda x: (-x[1], x[0]))
